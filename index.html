@@ -31,8 +31,27 @@
     <div class="container">
       <!-- Timeblocks go here -->
     </div>
+    <div class="btn-group-vertical" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-secondary">Sunday</button>
+      <button type="button" class="btn btn-secondary">Monday</button>
+      <button type="button" class="btn btn-secondary">Tuesday</button>
+      <button type="button" class="btn btn-secondary">Wednesday</button>
+      <button type="button" class="btn btn-secondary">Thursday</button>
+      <button type="button" class="btn btn-secondary">Friday</button>
+      <button type="button" class="btn btn-secondary">Saturday</button>
+
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="planner.js"></script>
+
+    <script>
+   let m = moment().format("MMM Do YY");   
+   console.log(m);
+   $("#currentDay").text(m);
+    </script>
+
+  
   </body>
 </html>
