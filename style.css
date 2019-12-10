@@ -1,8 +1,4 @@
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1;
-}
+
 
 textarea{
   background: transparent;
@@ -25,12 +21,14 @@ textarea{
   white-space: pre-wrap;
 }
 
-.time-block{
+.table{
   text-align: center;
   border-radius: 15px;
+  background-color: rgb(190, 211, 243);
+  
 }
 
-.row {
+tr {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;;
@@ -57,7 +55,7 @@ textarea{
   color: white;
 }
 
-.saveBtn {
+.btn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -65,12 +63,9 @@ textarea{
   color: white;
 }
 
-.saveBtn i:hover {
+.btn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
 }
 
-.btn-secondary {
-margin: 20px;
-background-color: #df8682; 
-}
+

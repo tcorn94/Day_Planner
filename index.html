@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
+   
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -18,7 +15,11 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+   <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -28,19 +29,70 @@
       <p class="lead">A simple scheduling app for your daily activities</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
-    </div>
-    <div class="btn-group-vertical" role="group" aria-label="Basic example">
-      <button type="button" class="btn btn-secondary">Sunday</button>
-      <button type="button" class="btn btn-secondary">Monday</button>
-      <button type="button" class="btn btn-secondary">Tuesday</button>
-      <button type="button" class="btn btn-secondary">Wednesday</button>
-      <button type="button" class="btn btn-secondary">Thursday</button>
-      <button type="button" class="btn btn-secondary">Friday</button>
-      <button type="button" class="btn btn-secondary">Saturday</button>
-
-    </div>
+   
+        <div class="container">
+            
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Hour</th>
+                  <th>Plans</th>
+                  <th>Save</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>9AM</td>
+                  <td><input type="text" class="form-control" id="1" /></td>
+                  <td><input class="btn btn-primary" type="submit" value="✓"></td>
+                </tr>      
+                <tr class="success">
+                  <td>10AM</td>
+                  <td><input type="text" class="form-control" id="2"/></td>
+                  <td><input class="btn btn-primary" type="submit" value="✓"></td>
+                </tr>
+                <tr class="danger">
+                  <td>11AM</td>
+                  <td><input type="text" class="form-control" id="3"/></td>
+                  <td><input class="btn btn-primary" type="submit" value="✓"></td>
+                </tr>
+                <tr class="info">
+                  <td>12PM</td>
+                  <td><input type="text" class="form-control" id="4"/></td>
+                  <td><input class="btn btn-primary" type="submit" value="✓"></td>
+                </tr>
+                <tr class="warning">
+                  <td>1PM</td>
+                  <td><input type="text" class="form-control" id="5" /></td>
+                  <td><input class="btn btn-primary" type="submit" value="✓"></td>
+                </tr>
+                <tr class="active">
+                  <td>2PM</td>
+                  <td><input type="text" class="form-control" id="6" /></td>
+                  <td><input class="btn btn-primary" type="submit" value="✓"></td>
+                </tr>
+                <tr class="success">
+                    <td>3PM</td>
+                    <td><input type="text" class="form-control" id="7" /></td>
+                    <td><input class="btn btn-primary" type="submit" value="✓"></td>
+                  </tr>
+                  <tr class="danger">
+                    <td>4PM</td>
+                    <td><input type="text" class="form-control" id="8"/></td>
+                    <td><input class="btn btn-primary" type="submit" value="✓"></td>
+                  </tr>
+                  <tr class="info">
+                      <td>HAPPY HOUR</td>
+                      <td><input type="text" class="form-control" id="9" /></td>
+                      <td><input class="btn btn-primary" type="submit" value="✓"></td>
+                    </tr>
+              </tbody>
+            </table>
+          </div>
+    
+    
+ 
+      
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
@@ -51,6 +103,8 @@
    console.log(m);
    $("#currentDay").text(m);
     </script>
+
+    
 
   
   </body>
