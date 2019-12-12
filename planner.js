@@ -96,9 +96,13 @@ var x = parseInt(h.substring(0, 2))
 
    saveBtn.addClass("col-sm-2");
 
-   var inputBtn = $("<input>");
+   var inputBtn = $("<input>" + "Save" + "</input>");
+
+   
 
    inputBtn.attr("type", "button");
+
+   inputBtn.width("100px");
 
    inputBtn.attr("id", "save" + i);
    
